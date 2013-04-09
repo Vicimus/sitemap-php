@@ -188,7 +188,7 @@ class Sitemap {
 		$this->getWriter()->startElement('url');
 		$this->getWriter()->writeElement('loc', $this->getDomain() . $loc);
 		$this->getWriter()->writeElement('priority', $priority);
-		if(!is_null($title)
+		if(!is_null($title))
 			$this->getWriter()->writeElement('title', $title);
 		if ($changefreq)
 			$this->getWriter()->writeElement('changefreq', $changefreq);
